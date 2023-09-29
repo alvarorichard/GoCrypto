@@ -9,4 +9,6 @@ import (
 func RegisterAll(r *gin.Engine, db *gorm.DB) {
 	uv := NewUserView(db)
 	uv.Register(r)
+	cv := NewCoinView(db)
+	cv.Register(r)
 }

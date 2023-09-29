@@ -46,12 +46,12 @@ func (u *UserView) Create(c *gin.Context) {
 		c.JSON(400, gin.H{"error": err.Error()})
 		return
 	}
-	err = user.Save(u.db)
+	err = u.db.Create(&user).Error
 	if err != nil {
 		c.JSON(400, gin.H{"error": err.Error()})
 		return
 	}
-	token := middleware.New(int(user.ID), user.Name)
+	token := middleware.New(user.Id, user.Name)
 	jwt, err := token.Sign()
 	if err != nil {
 		c.JSON(400, gin.H{"error": err.Error()})
@@ -111,7 +111,7 @@ func (u *UserView) Login(c *gin.Context) {
 		c.JSON(400, gin.H{"error": "Invalid password"})
 		return
 	}
-	token := middleware.New(int(user.ID), user.Name)
+	token := middleware.New(user.Id, user.Name)
 	jwt, err := token.Sign()
 	if err != nil {
 		c.JSON(400, gin.H{"error": err.Error()})

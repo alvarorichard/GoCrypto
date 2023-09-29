@@ -1,19 +1,25 @@
 package models
 
-import "gorm.io/gorm"
+import (
+	"time"
+
+	"github.com/google/uuid"
+	"gorm.io/gorm"
+)
 
 // User is the user model
 type User struct {
-	gorm.Model
-	Email    string `gorm:"uniqueIndex" json:"email" binding:"required"`
-	Name     string `json:"name" binding:"required"`
-	Password string `json:"password" binding:"required"`
-	Type     string
-	Coins    []Coin `gorm:"many2many:user_coins;"`
+	Id        string    `gorm:"primaryKey" json:"id"`
+	CreatedAt time.Time `json:"created_at"`
+	Email     string    `gorm:"uniqueIndex" json:"email" binding:"required"`
+	Name      string    `json:"name" binding:"required"`
+	Password  string    `json:"password" binding:"required"`
+	Type      string
+	Coins     []Coin `gorm:"foreignKey:OwnerID"`
 }
 
-// Save saves the user to the database
-func (u *User) Save(db *gorm.DB) (err error) {
-	err = db.Create(u).Error
+func (u *User) BeforeCreate(tx *gorm.DB) (err error) {
+	u.Id = uuid.New().String()
+	u.CreatedAt = time.Now()
 	return
 }

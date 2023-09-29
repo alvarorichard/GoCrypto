@@ -1,12 +1,10 @@
 package main
 
 import (
-	"github.com/alvarorichard/GoCrypto/docs"
 	"github.com/alvarorichard/GoCrypto/internal/utils"
 	"github.com/alvarorichard/GoCrypto/internal/views"
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	swaggerFiles "github.com/swaggo/files"
-	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 func main() {
@@ -21,9 +19,12 @@ func main() {
 		panic(err)
 	}
 	r := gin.Default()
-	docs.SwaggerInfo.BasePath = "/"
-	url := ginSwagger.URL("http://localhost:8080/swagger/doc.json") // The url pointing to API definition
-	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, url))
+	c:=cors.DefaultConfig()
+	c.AllowOrigins = []string{"*"}
+	c.AllowMethods = []string{"GET", "POST", "PUT", "DELETE"}
+	c.AllowHeaders = []string{"Origin", "Content-Type", "Authorization"}
+	r.Use(cors.New(c))
+	//r.Use(cors.Default())
 
 	views.RegisterAll(r, db)
 

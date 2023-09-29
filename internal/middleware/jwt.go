@@ -8,12 +8,12 @@ import (
 )
 
 type Jwt struct {
-	UserID   int
+	UserID   string
 	UserName string
 	Admin    bool
 }
 
-func New(id int, userName string) *Jwt {
+func New(id string, userName string) *Jwt {
 	return &Jwt{
 		UserID:   id,
 		UserName: userName,
