@@ -84,7 +84,7 @@ npm i -g pnpm
 go run main.go
 ```
 
-## Executando o Back-End usando Binariao
+## Executando o Back-End Utlizando  Binario
 
 ```go
 .\main.exe
