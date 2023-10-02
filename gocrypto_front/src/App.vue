@@ -1,52 +1,43 @@
 <script>
-import { RouterLink } from 'vue-router';
 import { defineComponent } from 'vue';
+import Navbar from './components/navbar.vue'
 import axios from './api'
 import store from './store';
 export default defineComponent({
   name: 'App',
-  setup() {
-    return {
-      isUserAuthenticated: store.state.userIsAuthenticated,
-      user: store.state.user,
-      getUserData: async () => {
-        const token = localStorage.getItem('token');
-        if (token) {
-          const info = await axios.get('/users/me', {
-            headers: {
-              Authorization: `${token}`
+   setup() {
+        return {
+            user: store.state.user,
+            store : store,
+            async getUser() {
+                const token = localStorage.getItem('token')
+                const user = await axios.get("/users/me", {
+                    headers: {
+                        Authorization: `${token}`
+                    }
+                })
+                console.log(user.data)
+                store.commit('setUser', user.data)
             }
-          })
-         store.commit('setUser', info.data.claims)
         }
-      },
-
-    };
-  },
-  computed: {
-  },
-  mounted() {
-    this.getUserData()
-  },
+    },
+    mounted() {
+        this.getUser()
+    }
+  
 });
 </script>
 
 <template>
-  <ul>
-    <li>
-      <RouterLink to="/">Home</RouterLink>
-    </li>
-    <div v-if="isUserAuthenticated == false">
-      <li>
-        <RouterLink to="/login"> Login</RouterLink>
-      </li>
-      <li>
-        <RouterLink to="/register"> Registro</RouterLink>
-      </li>
-    </div>
+   
+  <h1 class="text-3xl font-bold underline text-blue-500">
+    Hello world!
+  </h1>
+  <button class=" btn btn-primary">
+    teste botao DaisyUI
+    </button>
 
-  </ul>
-  <RouterView />
+    <RouterView />
 </template>
 
 <style scoped></style>
