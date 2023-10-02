@@ -1,3 +1,10 @@
+
+<p align="center">
+  <img src="https://i.imgur.com/CAp9EhS.png" alt="Imagem logo" />
+</p>
+
+
+
 # GoCrypto
 
 GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com as melhores tecnologias disponíveis para garantir uma experiência rápida, segura e confiável aos nossos usuários.
