@@ -53,7 +53,7 @@ Se você deseja executar o GoCrypto localmente para desenvolvimento ou testes, s
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/alvarorichard/CortexC.git
+git clone https://github.com/alvarorichard/GoCrypto.git
 ```
 2. Navegue até a pasta do projeto:
 
