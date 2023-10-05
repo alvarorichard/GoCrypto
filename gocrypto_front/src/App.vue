@@ -29,13 +29,18 @@ export default defineComponent({
 </script>
 
 <template>
-   
-  <h1 class="text-3xl font-bold underline text-blue-500">
-    Hello world!
-  </h1>
-  <button class=" btn btn-primary">
-    teste botao DaisyUI
-    </button>
+
+ <header className="bg-zinc-900">
+    <nav>
+    <img src="" alt="">
+    <Link from="/Market">Market</Link>
+    <Link from="/Trade">Trade</Link>
+    <Link from="/Contato">Contato</Link>
+    <Link from="/Login">Login</Link>
+    <Link from="/Register">Sing Up</Link>
+  
+</nav>
+ </header>
 
     <RouterView />
 </template>

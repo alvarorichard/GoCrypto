@@ -20,18 +20,22 @@ export default defineComponent({
 })
 </script>
 <template>
-    <ul>
-        <li>
+
+
+       
             <RouterLink to="/">Home</RouterLink>
-        </li>
-        <div v-if="!isUserLoggedIn">
-            <li>
+      
+        <div class="flex gap-6" v-if="!isUserLoggedIn">
+           
                 <RouterLink to="/login"> Login</RouterLink>
-            </li>
-            <li>
                 <RouterLink to="/register"> Registro</RouterLink>
-            </li>
+                <RouterLink to="/market"> Market</RouterLink>
+                <RouterLink to="/trade"> Trade</RouterLink>
+                <RouterLink to="/sobreNos"> Sobre Nós</RouterLink>
+                <RouterLink to="/contato"> Contato</RouterLink>
+         
         </div>
 
-    </ul>
+   
+   
 </template>
