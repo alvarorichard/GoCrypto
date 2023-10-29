@@ -77,7 +77,7 @@ export default defineComponent({
       </form>
     </section>
     <section class="w-6/12 flex flex-col justify-center items-center max-md:hidden">
-      <img src="../assets/images/hero-signup.svg" alt="" />
+      <img class="h-[700px]" src="../assets/images/hero-signup.svg" alt="" />
     </section>
   </main>
 </template>
