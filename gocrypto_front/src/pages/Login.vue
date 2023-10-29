@@ -67,11 +67,7 @@ export default defineComponent({
       </form>
     </section>
     <section class="w-6/12 flex flex-col justify-center items-center max-md:hidden">
-<<<<<<< HEAD
       <img class="h-[600px]" src="../assets/images/hero-login.svg" alt="" />
-=======
-      <img class="h-[700px]" src="../assets/images/hero-login.svg" alt="" />
->>>>>>> 7672b5204ef04eda002e8c639693515fbf3d08e9
     </section>
   </main>
 </template>
