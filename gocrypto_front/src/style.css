@@ -10,6 +10,30 @@ html {
   background: url(./assets/images/bg.png) no-repeat center / cover;
 }
 
+#wallet-page {
+  background: url(./assets/images/bg.png) no-repeat center / cover;
+  /* padding: 56px; */
+}
+
+@media (max-width: 900px) {
+  #wallet-page {
+    padding: 0 !important;
+    padding-top: 56px !important;
+  }
+}
+
+th,
+td {
+  padding: 8px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -29,9 +29,9 @@ export default defineComponent({
 
 <template>
   <Navbar />
-  <main id="home-page" class="w-full min-h-screen flex flex-col justify-center items-center">
+  <main id="home-page" class="w-full min-h-screen flex flex-col justify-center items-center pt-16 pb-6 px-2">
     <div class="flex justify-center items-center flex-wrap">
-      <h1 class="max-w-sm text-4xl text-white font-medium">
+      <h1 class="max-w-sm text-4xl text-white font-medium max-[783px]:text-center">
         A maneira mais popular do mundo de comprar vender e trocar criptomoeda
       </h1>
       <img class="h-[400px]" src="../assets/images/hero-home.svg" alt="" />

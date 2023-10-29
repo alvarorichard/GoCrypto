@@ -38,7 +38,7 @@ export default defineComponent({
 
 <template>
   <Navbar />
-  <main class="w-full min-h-screen flex items-center bg-black">
+  <main class="w-full min-h-screen flex items-center pt-16 pb-6 px-2 bg-black">
     <section class="w-6/12 flex flex-col justify-center items-center gap-5 px-2 max-md:w-full">
       <img class="md:hidden" src="https://i.imgur.com/CAp9EhS.png" alt="Imagem logo" />
       <h1 class="text-3xl text-center text-white font-bold">Are you ok to go?</h1>
@@ -77,7 +77,7 @@ export default defineComponent({
       </form>
     </section>
     <section class="w-6/12 flex flex-col justify-center items-center max-md:hidden">
-      <img src="../assets/images/hero-signup.svg" alt="" />
+      <img class="h-[600px]" src="../assets/images/hero-signup.svg" alt="" />
     </section>
   </main>
 </template>
