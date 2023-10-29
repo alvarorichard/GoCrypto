@@ -1,6 +1,7 @@
 import Home from "./pages/Home.vue";
 import Login from "./pages/Login.vue";
 import Register from "./pages/Register.vue";
+import Carteira from "./pages/Carteira.vue";
 import * as VueRouter from "vue-router";
 
 const routes = [
@@ -15,6 +16,10 @@ const routes = [
   {
     path: "/register",
     component: Register,
+  },
+  {
+    path: "/carteira",
+    component: Carteira,
   },
 ];
 
