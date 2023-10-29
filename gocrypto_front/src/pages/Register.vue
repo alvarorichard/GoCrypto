@@ -1,48 +1,83 @@
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
-import Navbar from '../components/navbar.vue';
-import axios from '../api'
-import store from '../store';
+import Navbar from "../components/navbar.vue";
+import axios from "../api";
+import store from "../store";
 export default defineComponent({
-    name: 'Register',
-    components: { Navbar },
-    setup() {
-        return {
-            msg: 'Register',
-            LoginDetails: {
-                email: '',
-                password: '',
-                name: ''
-            },
-            onSu(e) {
-                e.preventDefault()
-                axios.post('/register', this.LoginDetails)
-                    .then(res => {
-                        if (res.status == 200) {
-                            localStorage.setItem('token', res.data.token)
-                            localStorage.setItem('user', JSON.stringify(res.data.user))
-                            store.commit('setUserIsAuthenticated', true)
-                            this.$router.push('/')
-                        }
-                    })
-                    .catch(err => {
-                        alert(err)
-                    })
+  name: "Register",
+  components: { Navbar },
+  setup() {
+    return {
+      msg: "Register",
+      LoginDetails: {
+        email: "",
+        password: "",
+        name: "",
+      },
+      onSu(e) {
+        e.preventDefault();
+        axios
+          .post("/register", this.LoginDetails)
+          .then((res) => {
+            if (res.status == 200) {
+              localStorage.setItem("token", res.data.token);
+              localStorage.setItem("user", JSON.stringify(res.data.user));
+              store.commit("setUserIsAuthenticated", true);
+              this.$router.push("/");
             }
-
-        }
-    },
-})
+          })
+          .catch((err) => {
+            alert(err);
+          });
+      },
+    };
+  },
+});
 </script>
 
 <template>
-    <Navbar />
-    <form @submit="onSu">
-        <input type="text" v-model="LoginDetails.name" placeholder="Name">
-        <input type="text" v-model="LoginDetails.email" placeholder="Email">
-        <input type="password" v-model="LoginDetails.password" placeholder="Password">
-        <button type="submit">Register</button>
-    </form>
-
+  <Navbar />
+  <main class="w-full min-h-screen flex items-center bg-black">
+    <section class="w-6/12 flex flex-col justify-center items-center gap-5 px-2 max-md:w-full">
+      <img class="md:hidden" src="https://i.imgur.com/CAp9EhS.png" alt="Imagem logo" />
+      <h1 class="text-3xl text-center text-white font-bold">Are you ok to go?</h1>
+      <form class="max-w-[300px] w-full flex flex-col gap-3">
+        <div class="flex flex-col gap-1">
+          <label>Nome</label>
+          <input
+            class="p-2 rounded-sm border-gray-900 border-2"
+            type="text"
+            placeholder="Digite seu nome"
+          />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label>Email</label>
+          <input
+            class="p-2 rounded-sm border-gray-900 border-2"
+            type="email"
+            placeholder="Digite seu email"
+          />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label>Senha</label>
+          <input
+            class="p-2 rounded-sm border-gray-900 border-2"
+            type="password"
+            placeholder="Digite sua senha"
+          />
+        </div>
+        <p>Já tem uma conta? <a class="text-white hover:underline" href="">Entrar</a></p>
+        <button
+          class="w-full h-12 bg-gray-700 duration-300 text-white rounded hover:bg-gray-900"
+          type="submit"
+        >
+          Cadastrar
+        </button>
+      </form>
+    </section>
+    <section class="w-6/12 flex flex-col justify-center items-center max-md:hidden">
+      <img src="../assets/images/hero-signup.svg" alt="" />
+    </section>
+  </main>
 </template>
