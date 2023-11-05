@@ -19,7 +19,6 @@ export default defineComponent({
           alt="Imagem logo"
         />
       </RouterLink>
-      <h1 class="text-3xl">Footer</h1>
     </div>
     <hr class="opacity-30" />
     <div class="flex flex-col">
