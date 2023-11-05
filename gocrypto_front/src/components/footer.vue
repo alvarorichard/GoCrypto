@@ -21,7 +21,7 @@ export default defineComponent({
       </RouterLink>
       <h1 class="text-3xl">Footer</h1>
     </div>
-    <hr class="opacity-30">
+    <hr class="opacity-30" />
     <div class="flex flex-col">
       <RouterLink class="max-w-[120px] flex items-center gap-2 hover:opacity-80" to="/">
         <img src="../assets/icons/instagram-icon.svg" width="28" alt="" />

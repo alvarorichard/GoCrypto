@@ -34,7 +34,7 @@ export default defineComponent({
       <Link from="/Trade">Trade</Link>
       <Link from="/Contato">Contato</Link>
       <Link from="/Login">Login</Link>
-      <Link from="/Register">Sing Up</Link>
+      <Link from="/Register">Sign Up</Link>
     </nav>
   </header>
 

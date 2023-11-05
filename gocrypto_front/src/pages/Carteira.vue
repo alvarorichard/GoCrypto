@@ -43,15 +43,21 @@ export default defineComponent({
             </h1>
             <h2 class="text-2xl font-medium text-green-600">0.0001832029</h2>
             <div class="flex items-center gap-2 mt-5">
-              <button class="p-2 px-4 rounded hover:opacity-80 text-white bg-green-600">
-                Enviar
-              </button>
-              <button class="p-2 px-4 rounded hover:opacity-80 text-white bg-green-600">
-                Receber
-              </button>
-              <button class="p-2 px-4 rounded hover:opacity-80 text-white bg-green-600">
-                Comprar
-              </button>
+              <RouterLink
+                class="p-2 px-4 rounded hover:opacity-80 text-white bg-green-600"
+                to="/enviar"
+                >Enviar</RouterLink
+              >
+              <RouterLink
+                class="p-2 px-4 rounded hover:opacity-80 text-white bg-green-600"
+                to="/receber"
+                >Receber</RouterLink
+              >
+              <RouterLink
+                class="p-2 px-4 rounded hover:opacity-80 text-white bg-green-600"
+                to="/comprar"
+                >Comprar</RouterLink
+              >
             </div>
           </div>
           <hr />

@@ -12,7 +12,10 @@ html {
 
 #wallet-page {
   background: url(./assets/images/bg.png) no-repeat center / cover;
-  /* padding: 56px; */
+}
+
+#buy-page {
+  background: url(./assets/images/bg.png) no-repeat center / cover;
 }
 
 @media (max-width: 900px) {

@@ -57,7 +57,12 @@ export default defineComponent({
             placeholder="Digite sua senha"
           />
         </div>
-        <p>Não tem uma conta? <a class="text-white hover:underline" href="">Criar uma conta</a></p>
+        <p>
+          Não tem uma conta?
+          <RouterLink class="text-white hover:underline" to="/register"
+            >Não tem uma conta?</RouterLink
+          >
+        </p>
         <button
           class="w-full h-12 bg-gray-700 duration-300 text-white rounded hover:bg-gray-900"
           type="submit"
