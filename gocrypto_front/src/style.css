@@ -22,6 +22,10 @@ html {
   }
 }
 
+body {
+  background-color: #000;
+}
+
 th,
 td {
   padding: 8px;

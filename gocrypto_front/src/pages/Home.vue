@@ -3,10 +3,11 @@ import { defineComponent } from "vue";
 import store from "../store";
 import axios from "../api";
 import Navbar from "../components/navbar.vue";
+import Footer from "../components/footer.vue";
 
 export default defineComponent({
   name: "Home",
-  components: { Navbar },
+  components: { Navbar, Footer },
   setup() {
     return {
       msg: "Home",
@@ -29,7 +30,10 @@ export default defineComponent({
 
 <template>
   <Navbar />
-  <main id="home-page" class="w-full min-h-screen flex flex-col justify-center items-center pt-16 pb-6 px-2">
+  <main
+    id="home-page"
+    class="w-full min-h-screen flex flex-col justify-center items-center pt-16 px-2"
+  >
     <div class="flex justify-center items-center flex-wrap">
       <h1 class="max-w-sm text-4xl text-white font-medium max-[783px]:text-center">
         A maneira mais popular do mundo de comprar vender e trocar criptomoeda
@@ -78,6 +82,7 @@ export default defineComponent({
       </div>
     </div>
   </main>
+  <Footer />
 </template>
 
 <style scoped></style>

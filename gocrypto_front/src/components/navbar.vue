@@ -35,9 +35,7 @@ export default defineComponent({
       <RouterLink class="hover:text-white" to="/login"> Login</RouterLink>
       <RouterLink class="hover:text-white" to="/register"> Registro</RouterLink>
       <RouterLink class="hover:text-white" to="/Carteira"> Carteira</RouterLink>
-      <RouterLink class="hover:text-white" to="/market"> Market</RouterLink>
-      <RouterLink class="hover:text-white" to="/trade"> Trade</RouterLink>
-      <RouterLink class="hover:text-white" to="/sobreNos"> Sobre Nós</RouterLink>
+      <RouterLink class="hover:text-white" to="/sobre-nos"> Sobre Nós</RouterLink>
       <RouterLink class="hover:text-white" to="/contato"> Contato</RouterLink>
     </nav>
     <!-- trocar o conteudo do button por uma img com um icone de menu hamburguer -->
