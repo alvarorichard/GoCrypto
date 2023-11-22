@@ -8,6 +8,7 @@ import Comprar from "./pages/Comprar.vue";
 import Receber from "./pages/Receber.vue";
 import Enviar from "./pages/Enviar.vue";
 import * as VueRouter from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
