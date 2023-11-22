@@ -26,6 +26,9 @@ const routes = [
   {
     path: "/carteira",
     component: Carteira,
+    //so mostre a carteira se o usuario estiver logado
+    meta: { requiresAuth: true },
+
   },
   {
     path: "/sobre-nos",

@@ -1,6 +1,7 @@
 <script>
-import { defineComponent } from "vue";
+import { defineComponent,computed } from "vue";
 import store from "../store";
+import { RouterLink } from "vue-router";
 export default defineComponent({
   name: "Navbar",
   setup() {
@@ -22,7 +23,11 @@ export default defineComponent({
 <template>
   <header
     class="w-full h-14 px-5 flex justify-between items-center fixed top-0 bg-transparent backdrop-blur-xl border-b-2 border-b-[#117A7830]"
-    v-if="!isUserLoggedIn"
+    
+  
+
+
+ 
   >
     <RouterLink to="/">
       <img
@@ -34,7 +39,8 @@ export default defineComponent({
     <nav class="flex items-center gap-6 max-[750px]:hidden">
       <RouterLink class="hover:text-white" to="/login"> Login</RouterLink>
       <RouterLink class="hover:text-white" to="/register"> Registro</RouterLink>
-      <RouterLink class="hover:text-white" to="/Carteira"> Carteira</RouterLink>
+      <RouterLink class= "hover:text-white" v-if="isUserLoggedIn === true " to="/Carteira"> Carteira</RouterLink>
+
       <RouterLink class="hover:text-white" to="/sobre-nos"> Sobre Nós</RouterLink>
       <RouterLink class="hover:text-white" to="/contato"> Contato</RouterLink>
     </nav>
