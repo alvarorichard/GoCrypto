@@ -23,9 +23,14 @@ func Buy(c *fiber.Ctx) error {
 		CoinID: operation.CoinID,
 		Amount: operation.Amount,
 	}
+	err = db.Create(&b).Error
+   
+	
 
-	if db.Create(&b).Error == nil {
+	if err != nil {
+
 		return c.Status(500).JSON(fiber.Map{"message": "Internal Server Error"})
+
 	}
 
 	return c.JSON(fiber.Map{
