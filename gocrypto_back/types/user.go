@@ -21,3 +21,8 @@ type NewUser struct {
 	Email    string `json:"email"`
 	Password string `json:"password"`
 }
+
+
+type Promote struct {
+	ID uint `json:"user_id"`
+}

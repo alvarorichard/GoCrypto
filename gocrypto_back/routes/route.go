@@ -43,4 +43,5 @@ func MyUserRouter(group fiber.Router) {
 func AdminRouter(group fiber.Router) {
 	group.Post("/coin", admin.CreateCoin)
 	group.Get("/coin", admin.ListCoins)
+	group.Post("/promote", admin.Promote)
 }

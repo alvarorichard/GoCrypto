@@ -42,3 +42,32 @@ func ListCoins(c *fiber.Ctx) error {
 	}
 	return c.JSON(coins)
 }
+
+
+func Promote(c *fiber.Ctx) error {
+	user := c.Locals("user").(*jwt.Token)
+	claims := user.Claims.(jwt.MapClaims)
+	userID := claims["admin"].(bool)
+	if !userID {
+		return c.Status(401).JSON(fiber.Map{"message": "Unauthorized"})
+	}
+
+	db := c.Locals("db").(*gorm.DB)
+
+	prom := types.Promote{}
+
+	err := c.BodyParser(&prom)
+
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"message": "Internal Server Error"})
+	}
+	err = db.Table("users").Where("id = ?", prom.ID).Update("admin", true).Error
+
+	// err = db.Table("users").Where("id = ?", prom.ID).Update("admin", true).Error
+	
+	res := types.Message{
+		Type: "success",
+		Message: "User promoted with ok",
+	}
+	return c.JSON(res)
+}
