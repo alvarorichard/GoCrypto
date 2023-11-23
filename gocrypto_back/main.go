@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/gofiber/fiber/v2"
-	"github.com/gofiber/fiber/v2/middleware/cors" // Import the CORS middleware
 	"gocrypto_back/routes"
 	"gocrypto_back/types"
+
+	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/fiber/v2/middleware/cors" // Import the CORS middleware
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 )
@@ -23,11 +24,11 @@ func main() {
 
 	// Configure CORS middleware for all routes
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "*", // Allow any origin
-		AllowHeaders: "Origin, Content-Type, Accept", // You can specify the headers you want to allow
-		// ... other configuration options
+		AllowOrigins:  "*",
+		AllowHeaders:  "Origin, Content-Type, Accept, Authorization",
+		AllowMethods:  "GET, POST, PUT, DELETE, PATCH",
+		ExposeHeaders: "Authorization",
 	}))
-
 	app.Use(func(c *fiber.Ctx) error {
 		c.Locals("db", db)
 		return c.Next()
@@ -35,5 +36,6 @@ func main() {
 
 	api := app.Group("/api")
 	routes.ApiRouter(api)
+
 	_ = app.Listen(":3000")
 }

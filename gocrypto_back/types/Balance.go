@@ -17,6 +17,7 @@ type Balance struct {
 }
 
 type WalletResponse struct {
+	ID        uint      `json:"id"`
 	Date      time.Time `json:"time"`
 	Ammount   float64   `json:"amount"`
 	CoinName  string    `json:"coin"`

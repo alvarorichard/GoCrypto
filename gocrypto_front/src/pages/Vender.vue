@@ -4,19 +4,19 @@ import Navbar from "../components/navbar.vue";
 import {ref } from "vue";
 import api from "../api";
 export default defineComponent({
-  name: "Comprar",
+  name: "Vender",
   components: { Navbar },
   setup() {
     const Operation = ref({
       amount: "",
       coin: "",
-      type: "buy"
+      type: "sell"
     });
-    const msg = ref("Comprar");
+    const msg = ref("Vender");
 
     const onSubmit = (e) => {
       e.preventDefault();
-      api.post("/api/wallet/buy", {
+      api.post("/api/wallet/sell", {
         amount: Operation.value.amount,
         coin_id: Number(Operation.value.coin),
         operation: Operation.value.type,
@@ -26,7 +26,7 @@ export default defineComponent({
         },
       }).then((res) => {
         if (res.status == 200) {
-          alert("Compra realizada com sucesso");
+          alert("Venda realizada com sucesso");
         }
       }).catch((err) => {
         alert(err);
@@ -52,7 +52,7 @@ export default defineComponent({
       class="w-full max-w-[600px] flex flex-col justify-center items-center p-5 rounded-2xl bg-white text-black"
     >
       <img src="https://i.imgur.com/CAp9EhS.png" width="300" alt="Imagem logo" />
-      <h1 class="text-3xl mb-5">Comprar</h1>
+      <h1 class="text-3xl mb-5">Vender</h1>
       <form class="w-full flex flex-col justify-center items-center gap-4">
         <div class="w-[300px] flex flex-col gap-1">
           <label>Quantidade de Criptomoedas</label>
