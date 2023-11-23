@@ -23,13 +23,13 @@
         <ul>
             <li v-for="coin in coins" :key="coin.ID">
                 {{ coin.name }} - {{ coin.symbol }} - {{ coin.price }}
+              <button @click="deletar(coin.ID)">DELETAR</button>
             </li>
         </ul>
     </div>
 </template>
   
 <script>
-import axios from 'axios';
 import { ref } from 'vue';
 import api from '../api';
 export default {
@@ -53,6 +53,17 @@ export default {
                     }
                 });
                 this.coins.push(response.data);
+            } catch (error) {
+                alert(error);
+            }
+        },
+        async deletar(id) {
+            try {
+                const response = await api.delete(`/api/admin/coin/${id}`, {
+                    headers: {
+                        Authorization: `Bearer ${localStorage.getItem('token')}`
+                    }
+                });
             } catch (error) {
                 alert(error);
             }
