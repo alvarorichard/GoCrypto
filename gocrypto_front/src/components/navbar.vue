@@ -40,7 +40,7 @@ export default defineComponent({
       <RouterLink class="hover:text-white" to="/login"> Login</RouterLink>
       <RouterLink class="hover:text-white" to="/register"> Registro</RouterLink>
       <RouterLink class= "hover:text-white" v-if="isUserLoggedIn === true " to="/Carteira"> Carteira</RouterLink>
-
+      <RouterLink class= "hover:text-white" v-if="isUserLoggedIn === true " to="/admin"> Admin</RouterLink>
       <RouterLink class="hover:text-white" to="/sobre-nos"> Sobre Nós</RouterLink>
       <RouterLink class="hover:text-white" to="/contato"> Contato</RouterLink>
     </nav>

@@ -17,14 +17,13 @@ export default defineComponent({
       },
       onSu(e) {
         e.preventDefault();
-        alert("Login com sucesso");
+        // alert("Login com sucesso");
         console.log(this.LoginDetails);
         axios
           .post("/api/user/login", this.LoginDetails)
           .then((res) => {
             if (res.status == 200) {
-              localStorage.setItem("token", res.data.token);
-              localStorage.setItem("user", JSON.stringify(res.data.user));
+              localStorage.setItem("token", res.data.message);
               store.commit("setUserIsAuthenticated", true);
               this.$router.push("/");
             }
