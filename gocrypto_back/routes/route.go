@@ -44,4 +44,8 @@ func AdminRouter(group fiber.Router) {
 	group.Post("/coin", admin.CreateCoin)
 	group.Get("/coin", admin.ListCoins)
 	group.Post("/promote", admin.Promote)
+	group.Put("/coin/:id", admin.UpdateCoin)  // Add this line for updating a coin
+    group.Delete("/coin/:id", admin.DeleteCoin)  // Add this line for deleting a coin
 }
+
+

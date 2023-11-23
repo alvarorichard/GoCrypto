@@ -59,7 +59,7 @@ const routes = [
     path: "/admin",
     component: Admin,
     // so mostre a pagina admin se o usuario for admin
-    meta: { requiresAdmin: true },
+    meta: { requiresLogin: true },
   }
 ];
 
