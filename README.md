@@ -30,7 +30,7 @@ GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com a
 
 ## 🎨 Características
 
-* Performance: Com Golang e GinGonic no back-end, nosso site é extremamente rápido e eficiente.
+* Performance: Com Golang e Fiber no back-end, nosso site é extremamente rápido e eficiente.
 
 * Design Moderno: A combinação de Vue, TailwindCSS e DaisyUI proporciona uma experiência visual elegante e moderna.
 
