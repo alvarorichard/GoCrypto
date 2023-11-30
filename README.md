@@ -15,7 +15,7 @@ GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com a
 
 * Golang: Linguagem de programação eficiente, concorrente e moderna, escolhida pela sua capacidade de fornecer performance elevada e segurança.
 
-* GinGonic: Framework web rápido e eficaz para Golang. Nos permite criar APIs de alta performance com facilidade.
+* Fiber: Framework web rápido e eficaz para Golang. Nos permite criar APIs de alta performance com facilidade.
 
 * JS: Javascript é usado para proporcionar funcionalidades e interações assíncronas.
 
