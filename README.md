@@ -1,9 +1,8 @@
 
 <p align="center">
-  <img src="https://github.com/alvarorichard/GoCrypto/assets/102667323/0a4e424d-d7c0-4599-a2ae-c7868ba984dc" alt="Imagem logo" />
+  <img src="https://github.com/alvarorichard/GoCrypto/assets/102667323/c566d414-af14-4e84-8e2b-fb6613a27351" alt="Imagem logo" />
 </p>
 
-# GoCrypto
 
 GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com as melhores tecnologias disponíveis para garantir uma experiência rápida, segura e confiável aos nossos usuários.
 
