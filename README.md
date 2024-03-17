@@ -3,6 +3,7 @@
   <img src="https://github.com/alvarorichard/GoCrypto/assets/102667323/c566d414-af14-4e84-8e2b-fb6613a27351" alt="Imagem logo" />
 </p>
 
+[![GitHub license](https://img.shields.io/github/license/alvarorichard/GoCrypto)](alvarorichard/GoCrypto/blob/master/LICENSE) ![GitHub stars](https://img.shields.io/github/stars/alvarorichard/GoCrypto) ![GitHub stars](https://img.shields.io/github/last-commit/alvarorichard/GoCrypto) ![GitHub stars](https://img.shields.io/github/forks/alvarorichard/GoCrypto?style=social) ![GitHub contributors](https://img.shields.io/github/contributors/alvarorichard/GoCrypto)
 
 GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com as melhores tecnologias disponíveis para garantir uma experiência rápida, segura e confiável aos nossos usuários. Nossa missão é facilitar o acesso ao mundo das criptomoedas, tornando-o mais transparente e acessível para todos.
 
