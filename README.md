@@ -1,15 +1,13 @@
 
 <p align="center">
-  <img src="https://i.imgur.com/CAp9EhS.png" alt="Imagem logo" />
+  <img src="https://github.com/alvarorichard/GoCrypto/assets/102667323/44572def-dbc4-4f96-b701-b544151516b9" alt="Imagem logo" />
 </p>
-
-
 
 # GoCrypto
 
 GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com as melhores tecnologias disponíveis para garantir uma experiência rápida, segura e confiável aos nossos usuários.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Back-end:
 
@@ -28,7 +26,7 @@ GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com a
 
 * DaisyUI: Plugin para TailwindCSS, nos permite criar componentes de UI bonitos e eficientes com facilidade.
 
-## 🎨 Características
+## Características
 
 * Performance: Com Golang e Fiber no back-end, nosso site é extremamente rápido e eficiente.
 
@@ -36,7 +34,7 @@ GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com a
 
 * Segurança: O uso de tecnologias atualizadas e melhores práticas garante que suas transações sejam seguras.
 
-## 💼 Como Usar
+## Como Usar
 
 * Visite GoCrypto.
 
@@ -44,7 +42,7 @@ GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com a
 
 * Comece a comprar ou vender suas criptomoedas.
 
-## 🔧 Instalação e Execução Localmente
+## Instalação e Execução Localmente
 
 
 Se você deseja executar o GoCrypto localmente para desenvolvimento ou testes, siga os passos abaixo:
@@ -91,7 +89,7 @@ go run main.go
 ```
 ou apenas execute o Main.exe
 
-## 🤝 Contribua
+## Contribua
 
 Agradecemos por considerar contribuir para o GoCrypto! 
 
