@@ -4,7 +4,7 @@
 </p>
 
 
-GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com as melhores tecnologias disponíveis para garantir uma experiência rápida, segura e confiável aos nossos usuários.
+GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com as melhores tecnologias disponíveis para garantir uma experiência rápida, segura e confiável aos nossos usuários. Nossa missão é facilitar o acesso ao mundo das criptomoedas, tornando-o mais transparente e acessível para todos.
 
 ## Tecnologias Utilizadas
 
