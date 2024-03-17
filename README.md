@@ -9,7 +9,7 @@ GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com a
 
 ## Tecnologias Utilizadas
 
-### Back-end:
+### Server:
 
 * Golang: Linguagem de programação eficiente, concorrente e moderna, escolhida pela sua capacidade de fornecer performance elevada e segurança.
 
@@ -18,7 +18,7 @@ GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com a
 * JS: Javascript é usado para proporcionar funcionalidades e interações assíncronas.
 
 
-## Front-end:
+### Client:
 
 * Vue.js: Framework Javascript progressivo usado para construir interfaces de usuário interativas.
 
