@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://github.com/alvarorichard/GoCrypto/assets/102667323/44572def-dbc4-4f96-b701-b544151516b9" alt="Imagem logo" />
+  <img src="https://github.com/alvarorichard/GoCrypto/assets/102667323/0a4e424d-d7c0-4599-a2ae-c7868ba984dc" alt="Imagem logo" />
 </p>
 
 # GoCrypto
