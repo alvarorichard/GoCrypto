@@ -1,7 +1,15 @@
+<h4 align="center">
+    <p>
+        <b>English</b> |
+        <a href="https://github.com/alvarorichard/GoCrypto/blob/main/README_PT-BR.md.md">Рortuguês</a>
+    </p>
+</h4>
 
 <p align="center">
   <img src="https://github.com/alvarorichard/GoCrypto/assets/102667323/c566d414-af14-4e84-8e2b-fb6613a27351" alt="Imagem logo" />
 </p>
+
+
 
 [![GitHub license](https://img.shields.io/github/license/alvarorichard/GoCrypto)](alvarorichard/GoCrypto/blob/master/LICENSE) ![GitHub stars](https://img.shields.io/github/stars/alvarorichard/GoCrypto) ![GitHub stars](https://img.shields.io/github/last-commit/alvarorichard/GoCrypto) ![GitHub stars](https://img.shields.io/github/forks/alvarorichard/GoCrypto?style=social) ![GitHub contributors](https://img.shields.io/github/contributors/alvarorichard/GoCrypto)
 
