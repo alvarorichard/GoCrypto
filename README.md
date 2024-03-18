@@ -5,96 +5,95 @@
 
 [![GitHub license](https://img.shields.io/github/license/alvarorichard/GoCrypto)](alvarorichard/GoCrypto/blob/master/LICENSE) ![GitHub stars](https://img.shields.io/github/stars/alvarorichard/GoCrypto) ![GitHub stars](https://img.shields.io/github/last-commit/alvarorichard/GoCrypto) ![GitHub stars](https://img.shields.io/github/forks/alvarorichard/GoCrypto?style=social) ![GitHub contributors](https://img.shields.io/github/contributors/alvarorichard/GoCrypto)
 
-GoCrypto é uma plataforma avançada de venda de criptomoedas, construída com as melhores tecnologias disponíveis para garantir uma experiência rápida, segura e confiável aos nossos usuários. Nossa missão é facilitar o acesso ao mundo das criptomoedas, tornando-o mais transparente e acessível para todos.
+GoCrypto is an advanced cryptocurrency trading platform, built with the best available technologies to ensure a fast, secure, and reliable experience for our users. Our mission is to make access to the world of cryptocurrencies easier, more transparent, and accessible to everyone.
 
-[Link para o site](https://go-crypto.vercel.app/)
+[Link to the website](https://go-crypto.vercel.app/)
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 ### Server:
 
-* Golang: Linguagem de programação eficiente, concorrente e moderna, escolhida pela sua capacidade de fornecer performance elevada e segurança.
+* Golang: An efficient, concurrent, and modern programming language, chosen for its ability to provide high performance and security.
 
-* Fiber: Framework web rápido e eficaz para Golang. Nos permite criar APIs de alta performance com facilidade.
+* Fiber: A fast and efficient web framework for Golang. It allows us to create high-performance APIs with ease.
 
-* JS: Javascript é usado para proporcionar funcionalidades e interações assíncronas.
+* JS: JavaScript is used to provide asynchronous functionalities and interactions.
 
 
 ### Client:
 
-* Vue.js: Framework Javascript progressivo usado para construir interfaces de usuário interativas.
+* Vue.js: A progressive JavaScript framework used to build interactive user interfaces.
 
-* TailwindCSS: Framework de CSS de baixo nível, altamente customizável, que nos permite criar designs modernos sem sair do HTML.
+* TailwindCSS: A low-level, highly customizable CSS framework that allows us to create modern designs without leaving HTML.
 
-* DaisyUI: Plugin para TailwindCSS, nos permite criar componentes de UI bonitos e eficientes com facilidade.
+* DaisyUI: A plugin for TailwindCSS, it allows us to create beautiful and efficient UI components with ease.
 
-## Características
+## Features
 
-* Performance: Com Golang e Fiber no back-end, nosso site é extremamente rápido e eficiente.
+* Performance: With Golang and Fiber on the backend, our website is extremely fast and efficient.
 
-* Design Moderno: A combinação de Vue, TailwindCSS e DaisyUI proporciona uma experiência visual elegante e moderna.
+* Modern Design: The combination of Vue, TailwindCSS, and DaisyUI provides an elegant and modern visual experience.
 
-* Segurança: O uso de tecnologias atualizadas e melhores práticas garante que suas transações sejam seguras.
+* Security: The use of up-to-date technologies and best practices ensures that your transactions are secure.
 
-## Como Usar
+## How to Use
 
-* Visite GoCrypto.
+* Visit GoCrypto.
 
-* Crie uma conta ou faça login.
+* Create an account or log in.
 
-* Comece a comprar ou vender suas criptomoedas.
+* Start buying or selling your cryptocurrencies.
 
-## Instalação e Execução Localmente
-
-
-Se você deseja executar o GoCrypto localmente para desenvolvimento ou testes, siga os passos abaixo:
+## Installation and Local Execution
 
 
-1. Clone o repositório:
+If you want to run GoCrypto locally for development or testing, follow the steps below:
+
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/alvarorichard/GoCrypto.git
 ```
-2. Navegue até a pasta do projeto:
-
+2. Navigate to the project folder:
 ```bash
 cd GoCrypto
 ```
 
-3. Excutando o Front-end
+3. Running the Front-end:
 
 ```bash
 pnpm i
 ```
-E não podemos esquecer de rodar também 
+And don't forget to also run:
 
 
 ```bash
 pnpm dev
 ```
-### Para instalar Pnpm caso não tenha 
+### To install Pnpm if you don't have it:
 
 ```bash
 npm i -g pnpm
 ```
 
-##  Excutando o Back-End
+##  Running the Back-End:
 
 ```go
 go run main.go
 ```
 
-## Executando o Back-End Utlizando  Binario
+## Running the Back-End Using Binary:
 
 ```go
 .\main.exe
 ```
-ou apenas execute o Main.exe
+Or just execute the Main.exe
 
-## Contribua
+## Contribute
 
-Agradecemos por considerar contribuir para o GoCrypto! 
+Thank you for considering contributing to GoCrypto!
 
 
-Desenvolvido com ❤️ por Alvaro Richard e Lana Ribeiro 
+Developed with ❤️ by Alvaro Richard and Lana Ribeiro
 
